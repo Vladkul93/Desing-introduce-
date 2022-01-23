@@ -44,6 +44,16 @@ $(document).ready(function(){
         ]
     });
 });
+let showHover = document.querySelectorAll('.block');
+
+showHover.forEach(swelm =>{
+    swelm.addEventListener('mouseover', function() {
+        for(let s = 0; s< showHover.length; s++) {
+            showHover[s].classList.remove('show');
+        }
+        swelm.classList.add('show');
+    })
+});
 
 
 
